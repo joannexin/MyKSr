@@ -4,6 +4,8 @@ const db = require('../db/db.js');
 const request = require('request');
 const clientToDB = require('./fromClientToDb');
 const multer  = require('multer');
+const path = require('path');
+
 const upload = multer({ dest: path.join(__dirname, '../public/upload/') });
 
 const app = express();
