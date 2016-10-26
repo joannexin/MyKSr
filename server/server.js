@@ -4,7 +4,7 @@ const db = require('../db/db.js');
 const request = require('request');
 const clientToDB = require('./fromClientToDb');
 const multer  = require('multer');
-const upload = multer({ dest: '../public/upload/' });
+const upload = multer({ dest: path.join(__dirname, '../public/upload/') });
 
 const app = express();
 //set up the port, 3000 by default
